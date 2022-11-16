@@ -1,0 +1,25 @@
+cd 01\ Jan && python3 month.py January && cd ..
+cd 02\ Feb && python3 month.py February && cd ..
+cd 03\ Mar && python3 month.py March && cd ..
+cd 04\ Apr && python3 month.py April && cd ..
+cd 05\ May && python3 month.py May && cd ..
+cd 06\ Jun && python3 month.py June && cd ..
+cd 07\ July && python3 month.py July && cd ..
+cd 08\ Aug && python3 month.py August && cd ..
+cd 09\ Sep && python3 month.py September && cd ..
+cd 10\ Oct && python3 month.py October && cd ..
+cd 11\ Nov && python3 month.py November && cd ..
+cd 12\ Dec && python3 month.py December && cd ..
+
+cd 01\ Jan && python3 monthly_graph.py January && cd ..
+cd 02\ Feb && python3 monthly_graph.py February && cd ..
+cd 03\ Mar && python3 monthly_graph.py March && cd ..
+cd 04\ Apr && python3 monthly_graph.py April && cd ..
+cd 05\ May && python3 monthly_graph.py May && cd ..
+cd 06\ Jun && python3 monthly_graph.py June && cd ..
+cd 07\ July && python3 monthly_graph.py July && cd ..
+cd 08\ Aug && python3 monthly_graph.py August && cd ..
+cd 09\ Sep && python3 monthly_graph.py September && cd ..
+cd 10\ Oct && python3 monthly_graph.py October && cd ..
+cd 11\ Nov && python3 monthly_graph.py November && cd ..
+cd 12\ Dec && python3 monthly_graph.py December && cd ..
