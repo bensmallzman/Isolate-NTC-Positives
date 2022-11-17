@@ -27,12 +27,11 @@ def per_csv(argv1):
         with open(run,'r') as csvfile:
             file = csv.reader(csvfile, delimiter = ',')
             for row in file:
-                # we've isolated every row in the current file
                 try:
                     if ("NTC" in row[4]):
                         if (row[7].isnumeric()) or (float(row[7])):
                             if (float(row[7]) > 0):
-                                # we've determined the current file to have at least 1 positive, so we can break and move to the next txt file
+                                # we've determined the current file to have at least 1 positive, so break and move to the next txt file
                                 all_positive_runs.append(run)
                                 break
                 except:
@@ -50,7 +49,7 @@ def per_csv(argv1):
             all_positive_testnames.append(test)
         except:
             pass
-    
+            
     for test in all_positive_testnames:
         frequency.update({test: all_positive_testnames.count(test)})
 
