@@ -5,19 +5,19 @@ import re
 
 def plot_graph(month):
 
-    tests = []
-    y_values = []
-    y_axis = []
     dict = {}
 
     f = open("monthly_statistics.txt", 'r')
     f = f.readlines()
 
     for line in f[5::]:
-        line = line.split(" ")
-        temp = line[8].partition("%")[0]
-        temp = (int(temp))/100
-        dict.update({line[0]: temp})
+        try:
+            line = line.split(" ")
+            temp = line[8].partition("%")[0]
+            temp = (int(temp))/100
+            dict.update({line[0]: temp})
+        except:
+            pass
 
     x = list(dict.keys())
     y = list(dict.values())
